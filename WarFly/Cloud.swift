@@ -4,43 +4,38 @@
 //
 //  Created by Геворг on 22.11.2021.
 
-    import SpriteKit
-    import GameplayKit
+import SpriteKit
+import GameplayKit
 
-    class Cloud: SKSpriteNode {
-        static func populateIsland(at point: CGPoint) -> Island {
-            let islandImageName = configureIslandName()
-            let island = Island(imageNamed: islandImageName)
-            island.setScale(randomScaleFactor)
-            island.position = point
-            island.zPosition = 1
-            island.run(rotateForRandomAngle())
-            
-            return island
-        }
+protocol GameBackGroundSpriteable {
+    static func populateSprite(at point: CGPoint) -> Self
+}
+
+final class Cloud: SKSpriteNode, GameBackGroundSpriteable {
+    static func populateSprite(at point: CGPoint) -> Cloud {
+        let cloudImageName = configureName()
+        let cloud = Cloud(imageNamed: cloudImageName)
+        cloud.setScale(randomScaleFactor)
+        cloud.position = point
+        cloud.zPosition = 10
         
-        static func configureIslandName() -> String {
-            let distribution = GKRandomDistribution(lowestValue: 1, highestValue: 4)
-            let randomNumber = distribution.nextInt()
-            let imageName = "is" + "\(randomNumber)"
-            
-            return imageName
-        }
-        
-        static var randomScaleFactor: CGFloat {
-            let distribution = GKRandomDistribution(lowestValue: 1, highestValue: 10)
-            let randomNumber = CGFloat(distribution.nextInt()) / 10
-            
-            return randomNumber
-        }
-        
-        static func rotateForRandomAngle() -> SKAction {
-            
-            let distribution = GKRandomDistribution(lowestValue: 0, highestValue: 360)
-            let randomNumber = CGFloat(distribution.nextInt()) / 10
-            
-            return SKAction.rotate(toAngle: randomNumber * CGFloat(Double.pi / 180), duration: 0)
-        }
+        return cloud
     }
+    
+    fileprivate static func configureName() -> String {
+        let distribution = GKRandomDistribution(lowestValue: 1, highestValue: 3)
+        let randomNumber = distribution.nextInt()
+        let imageName = "cl" + "\(randomNumber)"
+        
+        return imageName
+    }
+    
+    fileprivate static var randomScaleFactor: CGFloat {
+        let distribution = GKRandomDistribution(lowestValue: 20, highestValue: 30)
+        let randomNumber = CGFloat(distribution.nextInt()) / 10
+        
+        return randomNumber
+    }
+}
 
 
