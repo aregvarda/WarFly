@@ -7,21 +7,6 @@
 import SpriteKit
 import GameplayKit
 
-protocol GameBackGroundSpriteable {
-    static func populate() -> Self
-    static func randomPoint() -> CGPoint
-}
-
-extension GameBackGroundSpriteable {
-    static func randomPoint() -> CGPoint {
-        let screen = UIScreen.main.bounds
-        let distribution = GKRandomDistribution(lowestValue: Int(screen.size.height) + 100, highestValue: Int(screen.size.height) + 200)
-        let y = CGFloat(distribution.nextInt())
-        let x = CGFloat(GKRandomSource.sharedRandom().nextInt(upperBound: Int(screen.size.width)))
-        return CGPoint(x: x, y: y)
-    }
-}
-
 
 final class Cloud: SKSpriteNode, GameBackGroundSpriteable {
     static func populate() -> Cloud {
@@ -29,7 +14,7 @@ final class Cloud: SKSpriteNode, GameBackGroundSpriteable {
         let cloud = Cloud(imageNamed: cloudImageName)
         cloud.setScale(randomScaleFactor)
         cloud.position = randomPoint()
-        cloud.zPosition = 17
+        cloud.zPosition = CGFloat(Int.random(in: 19...21))
         cloud.run(move(from: cloud.position))
         
         return cloud

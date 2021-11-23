@@ -17,6 +17,7 @@
 		C8B9C1B1274BEB5A00FC78F5 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B9C1B0274BEB5A00FC78F5 /* Cloud.swift */; };
 		C8B9C1B3274BFC5900FC78F5 /* PlayerPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B9C1B2274BFC5900FC78F5 /* PlayerPlane.swift */; };
 		C8B9C1B5274BFDCD00FC78F5 /* PlayerPlane.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C8B9C1B4274BFDCD00FC78F5 /* PlayerPlane.atlas */; };
+		C8EF4A76274D0DC600E2CE19 /* protocol GameBackgroundSpriteable + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EF4A75274D0DC600E2CE19 /* protocol GameBackgroundSpriteable + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		C8B9C1B0274BEB5A00FC78F5 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
 		C8B9C1B2274BFC5900FC78F5 /* PlayerPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPlane.swift; sourceTree = "<group>"; };
 		C8B9C1B4274BFDCD00FC78F5 /* PlayerPlane.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = PlayerPlane.atlas; sourceTree = "<group>"; };
+		C8EF4A75274D0DC600E2CE19 /* protocol GameBackgroundSpriteable + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "protocol GameBackgroundSpriteable + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				C8B9C1B2274BFC5900FC78F5 /* PlayerPlane.swift */,
 				C8B9C1AE274BDBB300FC78F5 /* Island.swift */,
 				C8B9C1B0274BEB5A00FC78F5 /* Cloud.swift */,
+				C8EF4A75274D0DC600E2CE19 /* protocol GameBackgroundSpriteable + Extension.swift */,
 				C8B9C1AC274BD59800FC78F5 /* Background.swift */,
 				C8B9C19F274BBC2100FC78F5 /* GameViewController.swift */,
 				C8B9C1A1274BBC2100FC78F5 /* Main.storyboard */,
@@ -154,6 +157,7 @@
 				C8B9C1B1274BEB5A00FC78F5 /* Cloud.swift in Sources */,
 				C8B9C1A0274BBC2100FC78F5 /* GameViewController.swift in Sources */,
 				C8B9C198274BBC2100FC78F5 /* AppDelegate.swift in Sources */,
+				C8EF4A76274D0DC600E2CE19 /* protocol GameBackgroundSpriteable + Extension.swift in Sources */,
 				C8B9C1AF274BDBB300FC78F5 /* Island.swift in Sources */,
 				C8B9C1AD274BD59800FC78F5 /* Background.swift in Sources */,
 			);
