@@ -23,6 +23,9 @@
 		C8EF4A76274D0DC600E2CE19 /* protocol GameBackgroundSpriteable + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EF4A75274D0DC600E2CE19 /* protocol GameBackgroundSpriteable + Extension.swift */; };
 		C8EF4A78274D562100E2CE19 /* PowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EF4A77274D562100E2CE19 /* PowerUp.swift */; };
 		C8EF4A7A274D579D00E2CE19 /* GreenPowerUp.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C8EF4A79274D579D00E2CE19 /* GreenPowerUp.atlas */; };
+		C8FF6F5F274F90EE000DCB02 /* BluePowerUp.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C8FF6F5E274F90EE000DCB02 /* BluePowerUp.atlas */; };
+		C8FF6F61274F9A6D000DCB02 /* BluePowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FF6F60274F9A6D000DCB02 /* BluePowerUp.swift */; };
+		C8FF6F63274F9A91000DCB02 /* GreenPowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FF6F62274F9A91000DCB02 /* GreenPowerUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		C8EF4A75274D0DC600E2CE19 /* protocol GameBackgroundSpriteable + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "protocol GameBackgroundSpriteable + Extension.swift"; sourceTree = "<group>"; };
 		C8EF4A77274D562100E2CE19 /* PowerUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerUp.swift; sourceTree = "<group>"; };
 		C8EF4A79274D579D00E2CE19 /* GreenPowerUp.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = GreenPowerUp.atlas; sourceTree = "<group>"; };
+		C8FF6F5E274F90EE000DCB02 /* BluePowerUp.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = BluePowerUp.atlas; sourceTree = "<group>"; };
+		C8FF6F60274F9A6D000DCB02 /* BluePowerUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluePowerUp.swift; sourceTree = "<group>"; };
+		C8FF6F62274F9A91000DCB02 /* GreenPowerUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenPowerUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,8 @@
 				C8B9C1B2274BFC5900FC78F5 /* PlayerPlane.swift */,
 				C85AC47D274E447700AD587F /* Enemy.swift */,
 				C8EF4A77274D562100E2CE19 /* PowerUp.swift */,
+				C8FF6F60274F9A6D000DCB02 /* BluePowerUp.swift */,
+				C8FF6F62274F9A91000DCB02 /* GreenPowerUp.swift */,
 				C8B9C1AE274BDBB300FC78F5 /* Island.swift */,
 				C8B9C1B0274BEB5A00FC78F5 /* Cloud.swift */,
 				C8EF4A75274D0DC600E2CE19 /* protocol GameBackgroundSpriteable + Extension.swift */,
@@ -93,6 +101,7 @@
 				C85AC47F274E44C800AD587F /* Enemy_1.atlas */,
 				C8EF4A79274D579D00E2CE19 /* GreenPowerUp.atlas */,
 				C8B9C1B4274BFDCD00FC78F5 /* PlayerPlane.atlas */,
+				C8FF6F5E274F90EE000DCB02 /* BluePowerUp.atlas */,
 			);
 			path = WarFly;
 			sourceTree = "<group>";
@@ -155,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8EF4A7A274D579D00E2CE19 /* GreenPowerUp.atlas in Resources */,
+				C8FF6F5F274F90EE000DCB02 /* BluePowerUp.atlas in Resources */,
 				C8B9C1B5274BFDCD00FC78F5 /* PlayerPlane.atlas in Resources */,
 				C8B9C1A3274BBC2100FC78F5 /* Main.storyboard in Resources */,
 				C85AC485274EAE3600AD587F /* Enemy_2.atlas in Resources */,
@@ -174,9 +184,11 @@
 				C8B9C1B3274BFC5900FC78F5 /* PlayerPlane.swift in Sources */,
 				C8B9C1B1274BEB5A00FC78F5 /* Cloud.swift in Sources */,
 				C8B9C1A0274BBC2100FC78F5 /* GameViewController.swift in Sources */,
+				C8FF6F61274F9A6D000DCB02 /* BluePowerUp.swift in Sources */,
 				C8B9C198274BBC2100FC78F5 /* AppDelegate.swift in Sources */,
 				C8EF4A76274D0DC600E2CE19 /* protocol GameBackgroundSpriteable + Extension.swift in Sources */,
 				C85AC47E274E447700AD587F /* Enemy.swift in Sources */,
+				C8FF6F63274F9A91000DCB02 /* GreenPowerUp.swift in Sources */,
 				C8B9C1AF274BDBB300FC78F5 /* Island.swift in Sources */,
 				C8EF4A78274D562100E2CE19 /* PowerUp.swift in Sources */,
 				C8B9C1AD274BD59800FC78F5 /* Background.swift in Sources */,
