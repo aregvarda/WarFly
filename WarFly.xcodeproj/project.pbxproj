@@ -30,6 +30,7 @@
 		C8FF6F68274FA5C4000DCB02 /* Shot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FF6F67274FA5C4000DCB02 /* Shot.swift */; };
 		C8FF6F6A274FA97A000DCB02 /* YellowShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FF6F69274FA97A000DCB02 /* YellowShot.swift */; };
 		C8FF6F6C274FB1A5000DCB02 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FF6F6B274FB1A5000DCB02 /* Assets.swift */; };
+		C8FF6F6E274FBDDC000DCB02 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FF6F6D274FBDDC000DCB02 /* MenuScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		C8FF6F67274FA5C4000DCB02 /* Shot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shot.swift; sourceTree = "<group>"; };
 		C8FF6F69274FA97A000DCB02 /* YellowShot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowShot.swift; sourceTree = "<group>"; };
 		C8FF6F6B274FB1A5000DCB02 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		C8FF6F6D274FBDDC000DCB02 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				C8B9C1AE274BDBB300FC78F5 /* Island.swift */,
 				C8B9C1B0274BEB5A00FC78F5 /* Cloud.swift */,
 				C8FF6F67274FA5C4000DCB02 /* Shot.swift */,
+				C8FF6F6D274FBDDC000DCB02 /* MenuScene.swift */,
 				C8FF6F69274FA97A000DCB02 /* YellowShot.swift */,
 				C8EF4A75274D0DC600E2CE19 /* protocol GameBackgroundSpriteable + Extension.swift */,
 				C8B9C1AC274BD59800FC78F5 /* Background.swift */,
@@ -214,6 +217,7 @@
 				C8FF6F63274F9A91000DCB02 /* GreenPowerUp.swift in Sources */,
 				C8B9C1AF274BDBB300FC78F5 /* Island.swift in Sources */,
 				C8EF4A78274D562100E2CE19 /* PowerUp.swift in Sources */,
+				C8FF6F6E274FBDDC000DCB02 /* MenuScene.swift in Sources */,
 				C8FF6F68274FA5C4000DCB02 /* Shot.swift in Sources */,
 				C8B9C1AD274BD59800FC78F5 /* Background.swift in Sources */,
 			);
