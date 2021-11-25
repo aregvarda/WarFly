@@ -28,18 +28,26 @@ class PlayerPlane: SKSpriteNode {
         playerPlane.position = point
         playerPlane.zPosition = 20
         
+        playerPlane.physicsBody = SKPhysicsBody(texture: playerPlaneTexture, alphaThreshold: 0.5, size: playerPlane.size)
+        playerPlane.physicsBody?.isDynamic = false
+        playerPlane.physicsBody?.categoryBitMask = BitMaskCategory.player
+        playerPlane.physicsBody?.collisionBitMask = BitMaskCategory.enemy | BitMaskCategory.powerUp
+        playerPlane.physicsBody?.contactTestBitMask = BitMaskCategory.enemy | BitMaskCategory.powerUp
+        
         return playerPlane
     }
+    
     func checkPosition() {
         self.position.x += xAcceleration * 50
+        
         if self.position.x < -70 {
             self.position.x = screenSize.width + 70
         } else if self.position.x > screenSize.width + 70 {
             self.position.x = -70
         }
     }
+    
     func performFly() {
-        
         preloadTextureArrays()
         motionManager.accelerometerUpdateInterval = 0.2
         motionManager.startAccelerometerUpdates(to: OperationQueue.current!) { [unowned self] (data, error) in
@@ -48,6 +56,7 @@ class PlayerPlane: SKSpriteNode {
                 self.xAcceleration = CGFloat(acceleration.x) * 0.7 + self.xAcceleration * 0.3
             }
         }
+        
         let planeWaitAction = SKAction.wait(forDuration: 1.0)
         let planeDirectionCheckAction = SKAction.run { [unowned self] in
             self.movementDirectionCheck()
@@ -58,16 +67,17 @@ class PlayerPlane: SKSpriteNode {
         
     }
     
+    
     fileprivate func preloadTextureArrays() {
         for i in 0...2 {
-            self.preloadArray(_stride: animationSpriteStrides[i]) { [unowned self] array in
+            self.preloadArray(_stride: animationSpriteStrides[i], callback: { [unowned self] array in
                 switch i {
                 case 0: self.leftTextureArrayAnimation = array
                 case 1: self.rightTextureArrayAnimation = array
                 case 2: self.forwardTextureArrayAnimation = array
                 default: break
                 }
-            }
+            })
         }
     }
     
@@ -83,17 +93,17 @@ class PlayerPlane: SKSpriteNode {
         }
     }
     
+    
     fileprivate func movementDirectionCheck() {
+    
         if xAcceleration > 0.02, moveDirection != .right, stillTurning == false {
             stillTurning = true
             moveDirection = .right
             turnPlane(direction: .right)
-        
-        } else if xAcceleration < -0.02,moveDirection != .left, stillTurning == false{
+        } else if xAcceleration < -0.02, moveDirection != .left, stillTurning == false {
             stillTurning = true
             moveDirection = .left
             turnPlane(direction: .left)
-        
         } else if stillTurning == false {
             turnPlane(direction: .none)
         }
@@ -109,9 +119,9 @@ class PlayerPlane: SKSpriteNode {
         } else {
             array = forwardTextureArrayAnimation
         }
+        
         let forwardAction = SKAction.animate(with: array, timePerFrame: 0.05, resize: true, restore: false)
         let backwardAction = SKAction.animate(with: array.reversed(), timePerFrame: 0.05, resize: true, restore: false)
-        
         let sequenceAction = SKAction.sequence([forwardAction, backwardAction])
         self.run(sequenceAction) { [unowned self] in
             self.stillTurning = false
@@ -124,3 +134,7 @@ enum TurnDirection {
     case right
     case none
 }
+
+
+
+

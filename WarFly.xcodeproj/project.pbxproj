@@ -31,6 +31,7 @@
 		C8FF6F6A274FA97A000DCB02 /* YellowShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FF6F69274FA97A000DCB02 /* YellowShot.swift */; };
 		C8FF6F6C274FB1A5000DCB02 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FF6F6B274FB1A5000DCB02 /* Assets.swift */; };
 		C8FF6F6E274FBDDC000DCB02 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FF6F6D274FBDDC000DCB02 /* MenuScene.swift */; };
+		C8FF6F70274FCFBE000DCB02 /* BitMaskCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FF6F6F274FCFBE000DCB02 /* BitMaskCategory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		C8FF6F69274FA97A000DCB02 /* YellowShot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowShot.swift; sourceTree = "<group>"; };
 		C8FF6F6B274FB1A5000DCB02 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		C8FF6F6D274FBDDC000DCB02 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
+		C8FF6F6F274FCFBE000DCB02 /* BitMaskCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitMaskCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				C8FF6F6B274FB1A5000DCB02 /* Assets.swift */,
 				C8B9C1B2274BFC5900FC78F5 /* PlayerPlane.swift */,
 				C85AC47D274E447700AD587F /* Enemy.swift */,
+				C8FF6F6F274FCFBE000DCB02 /* BitMaskCategory.swift */,
 				C8EF4A77274D562100E2CE19 /* PowerUp.swift */,
 				C8FF6F60274F9A6D000DCB02 /* BluePowerUp.swift */,
 				C8FF6F62274F9A91000DCB02 /* GreenPowerUp.swift */,
@@ -217,6 +220,7 @@
 				C8FF6F63274F9A91000DCB02 /* GreenPowerUp.swift in Sources */,
 				C8B9C1AF274BDBB300FC78F5 /* Island.swift in Sources */,
 				C8EF4A78274D562100E2CE19 /* PowerUp.swift in Sources */,
+				C8FF6F70274FCFBE000DCB02 /* BitMaskCategory.swift in Sources */,
 				C8FF6F6E274FBDDC000DCB02 /* MenuScene.swift in Sources */,
 				C8FF6F68274FA5C4000DCB02 /* Shot.swift in Sources */,
 				C8B9C1AD274BD59800FC78F5 /* Background.swift in Sources */,
