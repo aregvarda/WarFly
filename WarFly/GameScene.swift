@@ -10,7 +10,7 @@ import GameplayKit
 
 
 class GameScene: SKScene {
-
+    
     var player: PlayerPlane!
     
     override func didMove(to view: SKView) {
@@ -156,17 +156,24 @@ class GameScene: SKScene {
 extension GameScene: SKPhysicsContactDelegate {
     
     func didBegin(_ contact: SKPhysicsContact) {
-        print("contact detected")
-    }
-    func didEnd(_ contact: SKPhysicsContact) {
         
+        let bodyA = contact.bodyA.categoryBitMask
+        let bodyB = contact.bodyB.categoryBitMask
+        let player = BitMaskCategory.player
+        let enemy = BitMaskCategory.enemy
+        let shot = BitMaskCategory.shot
+        let powerUp = BitMaskCategory.powerUp
+        
+        if bodyA == player && bodyB == enemy || bodyB == player && bodyA == enemy {
+            print("enemy vs player")
+        } else if bodyA == player && bodyB == powerUp || bodyB == player && bodyA == powerUp {
+            print("powerUp vs player")
+        } else if bodyA == shot && bodyB == enemy || bodyB == shot && bodyA == enemy {
+            print("enemy vs shot")
+        }
+        func didEnd(_ contact: SKPhysicsContact) {
+            
+        }
     }
+    
 }
-
-
-
-
-
-
-
-
