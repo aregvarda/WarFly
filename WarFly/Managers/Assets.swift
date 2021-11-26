@@ -9,6 +9,7 @@ import SpriteKit
 
 class Assets: SKSpriteNode {
     static let shared = Assets()
+    var isLoaded = false
     let yellowAmmoAtlas = SKTextureAtlas(named: "YellowAmmo")
     let enemy_2Atlas = SKTextureAtlas(named: "Enemy_2")
     let enemy_1Atlas = SKTextureAtlas(named: "Enemy_1")
