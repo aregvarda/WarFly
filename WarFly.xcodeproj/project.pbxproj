@@ -14,6 +14,8 @@
 		C89EE61D2751081500E1D5AC /* ButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89EE61C2751081500E1D5AC /* ButtonNode.swift */; };
 		C89EE61F275115F500E1D5AC /* PauseScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89EE61E275115F500E1D5AC /* PauseScene.swift */; };
 		C89EE6212751245800E1D5AC /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89EE6202751245800E1D5AC /* SceneManager.swift */; };
+		C89EE62327513F1800E1D5AC /* ParentScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89EE62227513F1800E1D5AC /* ParentScene.swift */; };
+		C89EE6252751436700E1D5AC /* OptionsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89EE6242751436700E1D5AC /* OptionsScene.swift */; };
 		C8B9C198274BBC2100FC78F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B9C197274BBC2100FC78F5 /* AppDelegate.swift */; };
 		C8B9C19E274BBC2100FC78F5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B9C19D274BBC2100FC78F5 /* GameScene.swift */; };
 		C8B9C1A0274BBC2100FC78F5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B9C19F274BBC2100FC78F5 /* GameViewController.swift */; };
@@ -46,6 +48,8 @@
 		C89EE61C2751081500E1D5AC /* ButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNode.swift; sourceTree = "<group>"; };
 		C89EE61E275115F500E1D5AC /* PauseScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseScene.swift; sourceTree = "<group>"; };
 		C89EE6202751245800E1D5AC /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
+		C89EE62227513F1800E1D5AC /* ParentScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentScene.swift; sourceTree = "<group>"; };
+		C89EE6242751436700E1D5AC /* OptionsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsScene.swift; sourceTree = "<group>"; };
 		C8B9C194274BBC2100FC78F5 /* WarFly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarFly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8B9C197274BBC2100FC78F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8B9C19D274BBC2100FC78F5 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -144,7 +148,9 @@
 			children = (
 				C8FF6F6D274FBDDC000DCB02 /* MenuScene.swift */,
 				C89EE61E275115F500E1D5AC /* PauseScene.swift */,
+				C89EE6242751436700E1D5AC /* OptionsScene.swift */,
 				C8B9C19D274BBC2100FC78F5 /* GameScene.swift */,
+				C89EE62227513F1800E1D5AC /* ParentScene.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -283,11 +289,13 @@
 				C8EF4A78274D562100E2CE19 /* PowerUp.swift in Sources */,
 				C8FF6F70274FCFBE000DCB02 /* BitMaskCategory.swift in Sources */,
 				C8FF6F6E274FBDDC000DCB02 /* MenuScene.swift in Sources */,
+				C89EE62327513F1800E1D5AC /* ParentScene.swift in Sources */,
 				C89EE61F275115F500E1D5AC /* PauseScene.swift in Sources */,
 				C89EE6152750FA8300E1D5AC /* HUD.swift in Sources */,
 				C8FF6F68274FA5C4000DCB02 /* Shot.swift in Sources */,
 				C8B9C1AD274BD59800FC78F5 /* Background.swift in Sources */,
 				C89EE61D2751081500E1D5AC /* ButtonNode.swift in Sources */,
+				C89EE6252751436700E1D5AC /* OptionsScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
