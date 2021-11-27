@@ -41,7 +41,7 @@ class GameScene: ParentScene {
         guard sceneManager.gameScene == nil else { return }
         
         sceneManager.gameScene = self
-       
+        
         physicsWorld.contactDelegate = self
         physicsWorld.gravity = CGVector.zero
         
@@ -55,7 +55,7 @@ class GameScene: ParentScene {
         createHUD()
         
     }
-   
+    
     fileprivate func createHUD() {
         addChild(hud)
         hud.configureUI(screenSize: screenSize)
@@ -161,10 +161,16 @@ class GameScene: ParentScene {
         
         player.checkPosition()
         
-        enumerateChildNodes(withName: "sprite") { (node, stop) in
+        enumerateChildNodes(withName: "bluePowerUp") { (node, stop) in
             if node.position.y <= -100 {
                 node.removeFromParent()
             }
+        }
+        
+        enumerateChildNodes(withName: "greenPowerUp") { (node, stop) in
+            if node.position.y <= -100 {
+                node.removeFromParent()
+                }
         }
         
         enumerateChildNodes(withName: "shotSprite") { (node, stop) in
@@ -223,10 +229,17 @@ extension GameScene: SKPhysicsContactDelegate {
             addChild(explosion!)
             self.run(waitForExplosionAction) { explosion?.removeFromParent() }
             
-            print(lives)
+            if lives == 0 {
+                let gameOverScene = GameOverScene(size: self.size)
+                gameOverScene.scaleMode = .aspectFill
+                let transition = SKTransition.doorsCloseVertical(withDuration: 0.5)
+                self.scene!.view?.presentScene(gameOverScene, transition: transition)
+            }
             
         case [.powerUp, .player]: print("powerUp vs player")
         case [.enemy, .shot]: print("enemy vs shot")
+            hud.score += 5
+            
             contact.bodyA.node?.removeFromParent()
             contact.bodyB.node?.removeFromParent()
             addChild(explosion!)
