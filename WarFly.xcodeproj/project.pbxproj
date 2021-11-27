@@ -30,6 +30,8 @@
 		C8DE7587275248BD00C34CC4 /* EnemyExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = C8DE7585275248BD00C34CC4 /* EnemyExplosion.sks */; };
 		C8DE7588275248BD00C34CC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8DE7586275248BD00C34CC4 /* Assets.xcassets */; };
 		C8DE758B2752566900C34CC4 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DE758A2752566900C34CC4 /* GameOverScene.swift */; };
+		C8DE758E275267FC00C34CC4 /* hitSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = C8DE758C275267FC00C34CC4 /* hitSound.wav */; };
+		C8DE758F275267FC00C34CC4 /* backgroundMusic.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C8DE758D275267FC00C34CC4 /* backgroundMusic.m4a */; };
 		C8EF4A76274D0DC600E2CE19 /* protocol GameBackgroundSpriteable + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EF4A75274D0DC600E2CE19 /* protocol GameBackgroundSpriteable + Extension.swift */; };
 		C8EF4A78274D562100E2CE19 /* PowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EF4A77274D562100E2CE19 /* PowerUp.swift */; };
 		C8EF4A7A274D579D00E2CE19 /* GreenPowerUp.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C8EF4A79274D579D00E2CE19 /* GreenPowerUp.atlas */; };
@@ -70,6 +72,8 @@
 		C8DE7585275248BD00C34CC4 /* EnemyExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = EnemyExplosion.sks; sourceTree = "<group>"; };
 		C8DE7586275248BD00C34CC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8DE758A2752566900C34CC4 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		C8DE758C275267FC00C34CC4 /* hitSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hitSound.wav; sourceTree = "<group>"; };
+		C8DE758D275267FC00C34CC4 /* backgroundMusic.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = backgroundMusic.m4a; sourceTree = "<group>"; };
 		C8EF4A75274D0DC600E2CE19 /* protocol GameBackgroundSpriteable + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "protocol GameBackgroundSpriteable + Extension.swift"; sourceTree = "<group>"; };
 		C8EF4A77274D562100E2CE19 /* PowerUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerUp.swift; sourceTree = "<group>"; };
 		C8EF4A79274D579D00E2CE19 /* GreenPowerUp.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = GreenPowerUp.atlas; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				C8B9C197274BBC2100FC78F5 /* AppDelegate.swift */,
+				C8DE758D275267FC00C34CC4 /* backgroundMusic.m4a */,
+				C8DE758C275267FC00C34CC4 /* hitSound.wav */,
 				C8B9C1A1274BBC2100FC78F5 /* Main.storyboard */,
 				C8B9C1A4274BBC2500FC78F5 /* Assets.xcassets */,
 				C8B9C1A6274BBC2500FC78F5 /* Info.plist */,
@@ -283,7 +289,9 @@
 				C8B9C1B5274BFDCD00FC78F5 /* PlayerPlane.atlas in Resources */,
 				C8B9C1A3274BBC2100FC78F5 /* Main.storyboard in Resources */,
 				C85AC485274EAE3600AD587F /* Enemy_2.atlas in Resources */,
+				C8DE758F275267FC00C34CC4 /* backgroundMusic.m4a in Resources */,
 				C8B9C1A5274BBC2500FC78F5 /* Assets.xcassets in Resources */,
+				C8DE758E275267FC00C34CC4 /* hitSound.wav in Resources */,
 				C85AC480274E44C800AD587F /* Enemy_1.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
